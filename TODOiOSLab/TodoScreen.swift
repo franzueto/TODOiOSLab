@@ -7,8 +7,7 @@ struct TodoScreen: View {
     @State private var newTodoText = ""
 
     private var remainingCount: Int {
-        // LAB 4: reemplaza este valor por el número de tareas no completadas.
-        0
+        todos.filter { !$0.isDone }.count
     }
 
     var body: some View {
@@ -54,7 +53,8 @@ struct TodoScreen: View {
     private func addTodo() {
         let title = newTodoText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !title.isEmpty else { return }
-        // LAB 2: agrega una tarea y limpia el campo (dos líneas).
+        todos.append(Todo(title: title))
+        newTodoText = "Tarea nueva"
     }
 
     private func toggleTodo(id: UUID) {
