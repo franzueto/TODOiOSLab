@@ -55,6 +55,8 @@ struct TodoScreen: View {
         let title = newTodoText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !title.isEmpty else { return }
         // LAB 2: agrega una tarea y limpia el campo (dos líneas).
+        todos.append(Todo(title: title))
+        newTodoText = ""
     }
 
     private func toggleTodo(id: UUID) {
