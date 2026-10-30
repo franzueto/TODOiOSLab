@@ -1,0 +1,27 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+F729E7157BF3635B13D33D22 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabSettings.swift"; sourceTree = "<group>"; };
+7CB81EA92B049DCAAE1417AB = { isa = PBXBuildFile; fileRef = F729E7157BF3635B13D33D22; };
+AB8C0EE3847FA713F18788EF = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo.swift"; sourceTree = "<group>"; };
+F574764532E2AE85B8021650 = { isa = PBXBuildFile; fileRef = AB8C0EE3847FA713F18788EF; };
+C3117EF27CA9E98A4F682760 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TODOMacLabApp.swift"; sourceTree = "<group>"; };
+49F11570404BB59C68390619 = { isa = PBXBuildFile; fileRef = C3117EF27CA9E98A4F682760; };
+527F0B371D61C9BDA0AAE7FC = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoScreen.swift"; sourceTree = "<group>"; };
+1E7AAF834041A7B9563F9181 = { isa = PBXBuildFile; fileRef = 527F0B371D61C9BDA0AAE7FC; };
+06C34D6F8DF63A025FE5C378 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewTodoSheet.swift"; sourceTree = "<group>"; };
+841EF1006610881D241814C7 = { isa = PBXBuildFile; fileRef = 06C34D6F8DF63A025FE5C378; };
+7732347C4E6FB5542BA05AC9 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = TODOMacLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+8E876D349B28A1DED694FAD7 = { isa = PBXGroup; children = (B9E4682044747A67EB5BFA44, 39C4713ADAE8A6CFF2B59E4B); sourceTree = "<group>"; };
+B9E4682044747A67EB5BFA44 = { isa = PBXGroup; children = (F729E7157BF3635B13D33D22, AB8C0EE3847FA713F18788EF, C3117EF27CA9E98A4F682760, 527F0B371D61C9BDA0AAE7FC, 06C34D6F8DF63A025FE5C378); path = TODOMacLab; sourceTree = "<group>"; };
+39C4713ADAE8A6CFF2B59E4B = { isa = PBXGroup; children = (7732347C4E6FB5542BA05AC9); name = Products; sourceTree = "<group>"; };
+EB058EA1A3046EF3757FC407 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (7CB81EA92B049DCAAE1417AB, F574764532E2AE85B8021650, 49F11570404BB59C68390619, 1E7AAF834041A7B9563F9181, 841EF1006610881D241814C7); runOnlyForDeploymentPostprocessing = 0; };
+AE6B80E7E080D3852FD3EA4A = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+436D0079A3B0F0C56CF1A10C = { isa = PBXNativeTarget; buildConfigurationList = 39D26C16993384C486346376; buildPhases = (EB058EA1A3046EF3757FC407, AE6B80E7E080D3852FD3EA4A); buildRules = (); dependencies = (); name = TODOMacLab; productName = TODOMacLab; productReference = 7732347C4E6FB5542BA05AC9; productType = "com.apple.product-type.application"; };
+FF20EA18210259979700F706 = { isa = PBXProject; attributes = {LastUpgradeCheck = 2710; }; buildConfigurationList = CF10F7AA4DD080E4AB744077; compatibilityVersion = "Xcode 14.0"; developmentRegion = es; knownRegions = (es, en, Base); mainGroup = 8E876D349B28A1DED694FAD7; productRefGroup = 39C4713ADAE8A6CFF2B59E4B; projectDirPath = ""; projectRoot = ""; targets = (436D0079A3B0F0C56CF1A10C); };
+CF10F7AA4DD080E4AB744077 = { isa = XCConfigurationList; buildConfigurations = (281E66E2067C6F60A065D5FA, ED9FBF51EAC187ED3B3E6019); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+281E66E2067C6F60A065D5FA = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; }; name = Debug; };
+ED9FBF51EAC187ED3B3E6019 = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; }; name = Release; };
+39D26C16993384C486346376 = { isa = XCConfigurationList; buildConfigurations = (5A98AD6FB0A89018C517414F, 700FAB06BAEB23B33348DBC6); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+5A98AD6FB0A89018C517414F = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; PRODUCT_BUNDLE_IDENTIFIER = edu.lab.TODOMacLab; PRODUCT_NAME = "$(TARGET_NAME)"; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Mis tareas Mac"; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education"; SUPPORTED_PLATFORMS = macosx; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; ENABLE_PREVIEWS = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; }; name = Debug; };
+700FAB06BAEB23B33348DBC6 = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; PRODUCT_BUNDLE_IDENTIFIER = edu.lab.TODOMacLab; PRODUCT_NAME = "$(TARGET_NAME)"; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Mis tareas Mac"; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education"; SUPPORTED_PLATFORMS = macosx; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; ENABLE_PREVIEWS = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; }; name = Release; };
+}; rootObject = FF20EA18210259979700F706; }
