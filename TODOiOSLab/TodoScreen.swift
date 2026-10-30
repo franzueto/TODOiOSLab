@@ -7,7 +7,9 @@ struct TodoScreen: View {
     @State private var newTodoText = ""
 
     private var remainingCount: Int {
-        // LAB 4: reemplaza este valor por el número de tareas no completadas.
+        private var remainingCount: Int {
+            todos.filter { !$0.isDone }.count
+        }
         0
     }
 
@@ -60,8 +62,7 @@ struct TodoScreen: View {
 
     private func toggleTodo(id: UUID) {
         guard let index = todos.firstIndex(where: { $0.id == id }) else { return }
-        // LAB 3: invierte isDone en la tarea ubicada en index (una línea).
-        _ = index // Elimina esta línea cuando completes el ejercicio.
+            todos[index].isDone.toggle()
     }
 }
 
