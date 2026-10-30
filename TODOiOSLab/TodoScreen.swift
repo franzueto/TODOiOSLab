@@ -7,10 +7,7 @@ struct TodoScreen: View {
     @State private var newTodoText = ""
 
     private var remainingCount: Int {
-        private var remainingCount: Int {
             todos.filter { !$0.isDone }.count
-        }
-        0
     }
 
     var body: some View {
@@ -63,6 +60,7 @@ struct TodoScreen: View {
     private func toggleTodo(id: UUID) {
         guard let index = todos.firstIndex(where: { $0.id == id }) else { return }
             todos[index].isDone.toggle()
+
     }
 }
 
